@@ -1,0 +1,122 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #6BBBF8;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#box {
+  height: 600px;
+  width: 600px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: #6BBBF8;
+  border-radius: 7px;
+  padding: 10px;
+  border-radius: 25px;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  -moz-box-shadow:    inset 0 0 50px #000000;
+  -webkit-box-shadow: inset 0 0 50px #000000;
+  box-shadow:         inset 0 0 50px #000000;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  background-color: #4CAF50;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height:1;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.score {
+  background:rgba(255,255,255,0.2);
+  padding:0 3rem;
+  line-height:1;
+  border-radius:1rem;
+  color: red;
+}
+
+.game {
+  width:550px;
+  height:350px;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 auto;
+  background: #6BBBF8;
+  
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url("https://vignette.wikia.nocookie.net/clubpenguin/images/f/fc/Surprisus_Maximus_sprite_007.png/revision/latest?cb=20160927013849") bottom center no-repeat;
+  background-size:contain;
+  content:'';
+  width: 100%;
+  height:70px;
+  position: absolute;
+  z-index: 2;
+  bottom:-25px;
+}
+
+.pig {
+  background:url("https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Cartoons-PNG/Peppa_Pig_Transparent_PNG_Image.png?m=1507172104") bottom center no-repeat;
+  background-size:60%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.4s;
+}
+
+.hole.up .pig {
+  top:0;
+}
+
+
+button {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 250px;
+  font-size: 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: #3f3f3f;
+  margin: 0 4px 10px 8px;
+  height: 40px;
+  width: 100px;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+}
+
+#footer {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
